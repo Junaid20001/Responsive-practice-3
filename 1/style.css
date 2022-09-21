@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica;
+    
+}
+h1{
+    padding: 0 0 0 50px;
+}
+
+#wrapper{
+    background-color: rgb(173, 255, 105);
+    list-style: none;
+    margin: 50px;
+    padding: 20px;
+}
+
+#wrapper li{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+
+}
+#wrapper li label{
+    flex: 1;
+}
+
+#wrapper li input{
+    flex: 4;
+}
+
+button{
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 5px green solid;
+}
+
+@media screen and (min-width:250px) and (max-width:409px) {
+    #wrapper li{
+        flex-direction: column;       /* flex direction by default in row  */
+    }
+    #wrapper li input{
+        flex: 2;
+    }
+}
+
+@media screen and (min-width:410px) {
+    #wrapper li input{
+        flex: 2;
+    }
+}
+
+
+@media screen and (min-width:550px) {
+    #wrapper li input{
+        flex: 5;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    #wrapper li input{
+        flex: 8;
+    }
+}
+
+
